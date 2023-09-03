@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="title">
+      <img src="./img/termly-icon.png" alt="Logo" />
+      <p class="header-title">Termly</p>
+    </header>
+
+    <main id="main">
+      <nav id="navbar">
+        <div class="progress-section">
+          <p class="progress-text">Progress</p>
+          <span style="--width: 0" class="progress-bar"></span>
+          <div class="percentage"></div>
+        </div>
+        <div class="nav-container" data-multi-step>
+          <a href="" class="link activate" data-step>1. Privacy Policy Uses</a>
+          <a href="" class="link" data-step>2. User Information</a>
+          <a href="" class="link" data-step>3. Collection of Information</a>
+          <a href="" class="link" data-step>4. Use of Information</a>
+          <a href="" class="link" data-step>5. Disclosure of Information</a>
+          <a href="" class="link" data-step>6. Pre-Requisites</a>
+          <a href="" class="link" data-step>7. User Rights</a>
+          <a href="" class="link" data-step>8. Personal Experience</a>
+        </div>
+      </nav>
+
+      <form action="" data-multi-step>
+        <h1 class="page-title">Privacy Policy</h1>
+        <hr />
+        <div class="card active" data-step>
+          <h2 class="step-title">1. Privacy Policy Uses</h2>
+
+          <p class="step-question">
+            What will this Privacy Policy be used for?
+          </p>
+          <div class="form-group">
+            <input type="checkbox" required name="checkbox" id="checkbox1" />
+            <label for="checkbox1">Website</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="checkbox" id="checkbox2" />
+            <label for="checkbox2">Mobile application</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="checkbox" id="checkbox3" />
+            <label for="checkbox3">Facebook application</label>
+          </div>
+          <hr />
+          <button type="button" class="btn btn-next" data-next>Next</button>
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">2. User Information</h2>
+
+          <p class="step-question">
+            What type of English spelling do you want to be used in this Privacy
+            Policy?
+          </p>
+          <div class="form-group">
+            <input type="checkbox" name="checkbox" id="checkbox4" />
+            <label for="checkbox4">American English</label>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="checkbox" id="checkbox5" />
+            <label for="checkbox5">British English</label>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="button" class="btn btn-next" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">3. Collection of Information</h2>
+
+          <p class="step-question question1">
+            Do you have users in the United States?
+          </p>
+          <pre>Select "Yes" if you want to be CCPA compliant</pre>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio20" />
+            <label for="radio20">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio21" />
+            <label for="radio21">No</label>
+          </div>
+
+          <p class="step-question">
+            Do you have users in the EU, UK, Switzerland, Iceland,
+            Liechtenstein, or Norway?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio25" />
+            <label for="radio25">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio26" />
+            <label for="radio26">No</label>
+          </div>
+
+          <p class="step-question">Do you have users in Canada?</p>
+          <div class="form-group">
+            <input type="radio" name="radio-2" id="radio23" />
+            <label for="radio23">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio-2" id="radio24" />
+            <label for="radio24">No</label>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="button" class="btn btn-next" data-next>Next</button>
+          </div>
+
+          <!-- <button type="submit">Submit</button> -->
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">4. Use of Information</h2>
+
+          <p class="step-question">Fill in your details below</p>
+          <div class="form-group">
+            <label for="email1">Email : &nbsp;</label>
+            <input type="email" name="email" id="email1" />
+          </div>
+          <div class="form-group">
+            <label for="name1">Name : &nbsp;</label>
+            <input type="text" name="name" id="name1" />
+          </div>
+          <div class="form-group">
+            <label for="number1">Phone No. : &nbsp;</label>
+            <input type="tel" name="number" id="number1" />
+          </div>
+          <div class="form-group">
+            <label for="checkbox">Gender : &nbsp;</label>
+            <div>
+              <input type="radio" name="radio-2" id="radio1" />
+              <label for="radio1">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="radio-2" id="radio2" />
+              <label for="radio2">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="radio-2" id="radio3" />
+              <label for="radio3">Not wanna disclose</label>
+            </div>
+          </div>
+
+          <p class="step-question question">Marital Status :</p>
+          <div>
+            <input type="radio" name="radio-3" id="radio4" />
+            <label for="radi4">Married</label>
+          </div>
+          <div>
+            <input type="radio" name="radio-3" id="radio5" />
+            <label for="radi5">Unmarried</label>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="button" class="btn btn-next" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">5. Disclosure of Information</h2>
+
+          <p class="step-question">
+            Are you okay with your details being feeded into our systems
+            servers?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio6" />
+            <label for="radio6">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio7" />
+            <label for="radio7">No</label>
+          </div>
+
+          <p class="step-question">
+            Are you okay with frequent Newsletters being sent into your mail
+            from our org?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio6" />
+            <label for="radio6">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio7" />
+            <label for="radio7">No</label>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="button" class="btn btn-next" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">6. Pre-Requisites</h2>
+
+          <p class="step-question">
+            Are you fine with your details being used in our Site for
+            advertisement purposes?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio10" />
+            <label for="radio10">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio11" />
+            <label for="radio11">No</label>
+          </div>
+
+          <p class="step-question">
+            Are you fine with our organisation members contacting you for any
+            further updates?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio12" />
+            <label for="radio12">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio13" />
+            <label for="radio13">No</label>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="button" class="btn btn-next" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">7. User Rights</h2>
+
+          <p class="step-question">
+            Are you aware about the reformed Digicoin?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio15" />
+            <label for="radio15">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio" id="radio16" />
+            <label for="radio16">No</label>
+          </div>
+
+          <p class="step-question">
+            Are you aware about the new Bitcoin regulatory rules?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio17" />
+            <label for="radio17">Yes</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio-1" id="radio18" />
+            <label for="radio18">No</label>
+          </div>
+
+          <p class="step-question">
+            Have you been investing in the Cryptocurrency market?
+          </p>
+          <div class="form-group">
+            <input type="radio" name="radio-2" id="radio19" />
+            <label for="radio19">Yes quite frequently</label>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="radio-2" id="radio20" />
+            <label for="radio20">No am a newbie</label>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="button" class="btn btn-next" data-next>Next</button>
+          </div>
+        </div>
+
+        <div class="card" data-step>
+          <h2 class="step-title">8. Personal Experience</h2>
+
+          <p class="step-question">
+            Write in brief about your experience with Crypto.
+          </p>
+          <pre>(If haven't done any investments in it then leave blank)</pre>
+          <div class="form-group experience">
+            <label for="experience" class="experience"
+              >Your Experience :
+            </label>
+            <textarea
+              name="experience"
+              id="experience"
+              cols="30"
+              rows="30"
+              placeholder="Write in brief..."
+            ></textarea>
+          </div>
+          <hr />
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-prev" data-prev>
+              Previous
+            </button>
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
